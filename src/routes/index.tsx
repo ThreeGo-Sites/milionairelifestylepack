@@ -3,9 +3,9 @@ import { ArrowDown, ArrowRight, Check, ChevronDown, Play, ShieldCheck, Sparkles 
 
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/luxury-pack-hero.jpg";
-import mansionVideo from "@/assets/mansion-supercar.mp4.asset.json";
-import cashCounterVideo from "@/assets/cash-counter.mp4.asset.json";
-import luxuryCashVideo from "@/assets/luxury-cash.mp4.asset.json";
+import mansionVideo from "@/assets/mansion-supercar.webm.asset.json";
+import cashCounterVideo from "@/assets/cash-counter.webm.asset.json";
+import luxuryCashVideo from "@/assets/luxury-cash.webm.asset.json";
 
 const checkoutUrl = "https://pay.cakto.com.br/3f4kxok_1102215";
 
@@ -96,7 +96,9 @@ function Index() {
             {previewVideos.map((video, index) => (
               <article key={video.src} className={`group relative overflow-hidden border border-border bg-card ${index === 1 ? "md:translate-y-10" : ""}`}>
                 <div className="relative aspect-[9/16] overflow-hidden">
-                  <video src={video.src} controls playsInline preload="metadata" aria-label={`Prévia: ${video.label}`} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" />
+                  <video controls playsInline preload="metadata" aria-label={`Prévia: ${video.label}`} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]">
+                    <source src={video.src} type="video/webm" />
+                  </video>
                   <div className="pointer-events-none absolute left-4 top-4 flex size-10 items-center justify-center border border-ivory/50 bg-ink/60 text-xs font-bold text-ivory">{video.number}</div>
                 </div>
                 <div className="flex items-center justify-between p-5">
