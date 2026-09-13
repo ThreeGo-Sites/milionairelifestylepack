@@ -63,7 +63,7 @@ function Index() {
       <section className="bg-ivory py-20 text-ink md:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-[0.8fr_1.2fr] md:px-10">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase text-emerald">Criado para destacar</p>
+            <p className="mb-4 text-xs font-semibold uppercase text-gold">Criado para destacar</p>
             <h2 className="font-display text-5xl leading-none font-semibold md:text-6xl">Seu conteúdo merece parecer valioso.</h2>
           </div>
           <div className="grid gap-8 border-t border-ink/20 pt-8 sm:grid-cols-2">
@@ -74,7 +74,7 @@ function Index() {
               ["04", "Acesso imediato", "Receba a biblioteca digital logo após a confirmação da compra."],
             ].map(([number, title, copy]) => (
               <article key={number} className="border-b border-ink/20 pb-7">
-                <span className="text-xs font-bold text-emerald">{number}</span>
+                <span className="text-xs font-bold text-gold">{number}</span>
                 <h3 className="mt-5 font-display text-2xl font-semibold">{title}</h3>
                 <p className="mt-2 text-sm leading-6 text-ink/65">{copy}</p>
               </article>
@@ -111,7 +111,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="mt-10 bg-emerald py-20 text-emerald-foreground md:py-28">
+      <section className="mt-10 bg-ink py-20 text-ivory md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
@@ -119,11 +119,11 @@ function Index() {
               <h2 className="font-display text-5xl leading-none font-semibold md:text-6xl">Pare de publicar o que todo mundo já viu.</h2>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
-              <div className="border border-emerald-foreground/20 p-6">
-                <span className="text-xs font-semibold uppercase text-emerald-foreground/60">Conteúdo comum</span>
-                <ul className="mt-6 space-y-4 text-sm text-emerald-foreground/70"><li>Visual genérico</li><li>Pouco impacto</li><li>Perfil sem unidade</li></ul>
+              <div className="border border-ivory/20 p-6">
+                <span className="text-xs font-semibold uppercase text-ivory/60">Conteúdo comum</span>
+                <ul className="mt-6 space-y-4 text-sm text-ivory/70"><li>Visual genérico</li><li>Pouco impacto</li><li>Perfil sem unidade</li></ul>
               </div>
-              <div className="border border-gold bg-ink/20 p-6">
+              <div className="border border-gold bg-ivory/5 p-6">
                 <span className="text-xs font-semibold uppercase text-gold">Com o Vault Pack</span>
                 <ul className="mt-6 space-y-4 text-sm">{["Estética sofisticada", "Mais opções para criar", "Presença visual marcante"].map((item) => <li key={item} className="flex gap-2"><Check className="size-4 shrink-0 text-gold" />{item}</li>)}</ul>
               </div>
@@ -143,13 +143,13 @@ function Index() {
               </ul>
             </div>
             <div className="flex flex-col justify-center p-8 md:p-12">
-              <p className="text-xs font-semibold uppercase text-emerald">Oferta especial</p>
-              <p className="mt-5 font-display text-6xl font-semibold">R$ 12,99</p>
+              <p className="text-xs font-semibold uppercase text-gold">Oferta especial</p>
+              <p className="mt-5 font-display text-6xl font-semibold">R$ 19,90</p>
               <p className="mt-1 text-xs text-ink/55">Pagamento único • Sem mensalidade</p>
               <Button asChild variant="luxury" size="xl" className="mt-8 w-full">
                 <a href={checkoutUrl}>Quero acessar agora <ArrowRight /></a>
               </Button>
-              <div className="mt-5 flex items-center justify-center gap-2 text-xs text-ink/55"><ShieldCheck className="size-4 text-emerald" /> Pagamento seguro e acesso digital</div>
+              <div className="mt-5 flex items-center justify-center gap-2 text-xs text-ink/55"><ShieldCheck className="size-4 text-gold" /> Pagamento seguro e acesso digital</div>
             </div>
           </div>
         </div>
